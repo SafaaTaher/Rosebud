@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Great+Vibes&family=Dancing+Script&family=Pacifico&family=Allura&family=Alex+Brush&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.versal.com/versal.min.css">
+    <script src="https://cdn.versal.com/versal.min.js"></script>
+
 
 </head>
 <body>
@@ -356,6 +359,14 @@
     </div>
   </div>
 </footer>
+
+<div id="versal-container"></div>
+<script>
+  var versal = new Versal('#versal-container');
+  versal.init({
+    someOption: true
+  });
+</script>
 
 
 
