@@ -1,0 +1,604 @@
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+ .header{
+    background-image: url('website22/img12.jpg');
+    min-height: 100vh; /* Adjust height as needed */
+    width: 100%; /* Ensures it takes the full width */
+    background-size: cover; /* Ensures the image covers the header area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; 
+    position: relative;
+ }
+
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    justify-content: space-between;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 1.15em;
+}
+
+.navbar-brand{
+    filter: brightness(0) invert(1);
+}
+.navbar .navbar-nav a {
+    color: white;
+}
+
+.cart_icon, .list_icon{
+    color:white;
+    width: 30px;
+    height: 30px;
+}
+#moon-icon{
+    color:white;
+    width: 30px;
+    height: 30px;
+    margin-top: 0.8em;
+}
+
+.navbar-toggler {
+    border-color: white; /* Changes the border color to white */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Changes the icon to white */
+}
+.main-btn{
+    background-color:#d35555;
+    color: #FFF0E9;
+    border-radius: 50px;
+    border: 1px solid #d35555;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+.main-btn:hover{
+    background-color:#d19d9d;
+    color: #FFF0E9;
+}
+
+
+.landing {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+}
+
+.container{
+    margin-top: 0%;
+    
+}
+
+.container  p:first-child{
+    font-family: 'Great Vibes', cursive;
+    color :rgb(223, 218, 218);
+    font-size: 50px;
+}
+
+.container h1{
+    font-family: 'Lora', serif;
+    color: white;
+    font-size: 80px;
+    margin-top: -2%;
+}
+
+.btn1{
+    border-radius: 0px;
+    background-color: white;
+    border: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+}
+.btn2{
+    background-color: transparent;
+    color: white;
+    border-radius: 0px;
+    border: 1px rgb(204, 198, 198) solid;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+}
+.threeinrow{
+    margin-top: 5%;
+    overflow-x: hidden;
+}
+.threeinrow h3{
+    font-family: 'Lora', serif;
+    color:rgb(92, 81, 81);
+    font-size: 20px;
+}
+.threeinrow p{
+    color:rgb(145, 140, 140);
+    font-size: 15px;
+}
+.threeinrow img{
+    max-width: 100%;
+    height: auto;
+}
+/* start section fourimgs*/
+ .fourimgs{
+    background-color: #FFF0E9;
+    min-height: 100vh;
+    padding-top: 100px;
+    bottom: 0;
+    margin-bottom: 0px;
+} 
+@media (max-width: 575.98px){
+    .up_content{
+        margin-bottom: 20vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .up_content{
+        margin-bottom: 20vh;
+    } 
+}
+.up_content p:first-child{
+    font-family: 'Great Vibes', cursive;
+    color :rgb(26, 23, 23);
+    font-size: 40px;
+}
+.up_content h1{
+    font-family: 'Lora', serif;
+    color: rgb(27, 25, 25);
+    font-size: 30px;
+    margin-top: -0.5em;
+    letter-spacing: 0.1em;
+}
+
+.fourinrow{
+    align-items: center;
+    justify-content: center;
+    min-height: 42em;
+    margin-top: -5em;
+    left:0;
+    right:0;
+    bottom: 0;
+}
+.img4, .img4d {
+    width: 88%; /* اجعل الصورة تغطي عرض الـ div */
+    height: 25em; /* حدد الطول حسب ما يناسبك */
+    object-fit: cover; /* للتأكد من أن الصورة لا تفقد التناسب */
+}
+
+.fourinrow h3{
+    font-family: 'Lora', serif;
+    color:rgb(92, 81, 81);
+    font-size: 20px;
+}
+.fourinrow p{
+    color:rgb(145, 140, 140);
+    font-size: 15px;
+    margin-top: -1.5em;
+}
+
+.price-before {
+    text-decoration: line-through;
+    margin-right: 10px; 
+}
+
+/* End section fourimgs*/
+
+.POSTSNUM{
+    background-image: url('website22/img12.jpg');
+    min-height: 40vh; /* Adjust height as needed */
+    width: 100%; /* Ensures it takes the full width */
+    background-size: cover; /* Ensures the image covers the header area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: -2.8em;
+}
+
+
+.POSTSNUM h1{
+    font-family: 'Lora', serif;
+    color:rgb(255, 255, 255);
+    font-size: 52px;
+}
+
+.POSTSNUM h3{
+    font-family: 'Lora', serif;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+/*start leftright section*/
+
+.leftright{
+    margin-top: 15vh;
+    padding:15vh 5vh;
+    background-color: #FFF0E9;
+    margin-bottom: 15vh;
+}
+.leftright .Rimg{
+    max-width: 300vh;
+    height: 57vh;
+}
+.left p:first-child{
+    font-family: 'Great Vibes', cursive;
+    color :rgb(95, 90, 90);
+    font-size: 45px;
+}
+.left h2{
+    font-family: 'Lora', serif;
+    color: rgb(27, 25, 25);
+    font-size: 38px;
+    margin-top: -0.5em;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
+}
+.left p:last-child{
+    font-family: 'Great Vibes', cursive;
+    color :rgb(95, 90, 90);
+    font-size: 58px;
+    margin-bottom: 0.5em;
+}
+.btn3{
+    border: 1px solid rgb(14, 13, 13);
+    border-radius: 0px;
+    width:22.5vh;
+    height: 8.3vh;
+    font-family: 'Lora', serif;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    background-color: #FFF0E9;
+}
+.btn3:hover{
+    border: 1px solid rgb(14, 13, 13);
+    color:white;
+    background-color: #111110;
+}
+
+/*Start experts section*/
+
+.slide{
+    background-image: url('website22/img15.jpg');
+    min-height: 80vh; /* Adjust height as needed */
+    max-width: 100%; /* Ensures it takes the full width */
+    background-size: cover; /* Ensures the image covers the header area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; 
+    position: relative;
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;
+    
+}
+
+.sentences p:first-child{
+    font-family: 'Great Vibes', cursive;
+    color :rgb(241, 237, 237);
+    font-size: 49px;
+    margin-bottom: 4.5vh;
+}
+.sentences h2{
+    font-family: 'Lora', serif;
+    color: rgb(241, 237, 237);
+    font-size: 40px;
+    margin-top: -0.5em;
+    letter-spacing: 0.1em;
+    margin-bottom: 3.5vh;
+}
+
+.sentences h3{
+    font-family: 'Lora', serif;
+    color: rgb(241, 237, 237);
+    font-size: 1.5em;
+    margin-top: 2vh;
+    margin-bottom: 0.5em;
+}
+
+/* start section fourimgs*/
+.experts{
+    background-image: url('website22/img16.jpg');
+    background-size: cover; /* Ensures the image covers the header area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    max-width: 100%;
+    min-height: 100vh;
+    margin-bottom: 0px;
+    margin-top: 20vh;
+} 
+@media (max-width: 575.98px){
+    .up_content{
+        margin-bottom: 30vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .up_content{
+        margin-bottom: 20vh;
+    } 
+}
+.upGirls p:first-child{
+    font-family: 'Great Vibes', cursive;
+    color :rgb(26, 23, 23);
+    font-size: 40px;
+}
+.upGirls h1{
+    font-family: 'Lora', serif;
+    color: rgb(27, 25, 25);
+    font-size: 30px;
+    margin-top: -0.5em;
+    letter-spacing: 0.1em;
+}
+
+.experts.fourinrow{
+    align-items: center;
+    justify-content: center;
+    min-height: 42em;
+    margin-top: -5em;
+    left:0;
+    right:0;
+    bottom: 0;
+}
+.experts.img4, .experts.img4d {
+    width: 88%; /* اجعل الصورة تغطي عرض الـ div */
+    height: 25em; /* حدد الطول حسب ما يناسبك */
+    object-fit: cover; /* للتأكد من أن الصورة لا تفقد التناسب */
+}
+
+.experts.fourinrow h3{
+    font-family: 'Lora', serif;
+    color:rgb(92, 81, 81);
+    font-size: 20px;
+}
+.experts.fourinrow p{
+    color:rgb(145, 140, 140);
+    font-size: 15px;
+    margin-top: -1.5em;
+}
+.fourinrow svg{
+    color:rgb(5, 5, 5);
+    width: 15px;
+    height: 15px;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+.fourinrow .faceicon{
+    margin-left: 0em !important;
+}
+@media (max-width: 575.98px){
+    .up_content{
+        margin-bottom: 20vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .up_content{
+        margin-bottom: 20vh;
+    } 
+}
+
+
+/*end experts section*/
+.onlyimgs img {
+    width: 100%; /* Ensures the images fill the width of their container */
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Removes any extra space around the images */
+  }
+
+  .onlyimgs .row {
+    margin: 0;
+  }
+  
+  .onlyimgs .col-lg-3, 
+  .onlyimgs .col-md-3, 
+  .onlyimgs .col-sm-6 {
+    padding: 0; /* إزالة أي حشو بين الأعمدة */
+  }
+
+  .kalam{
+    background-color: #FFF0E9;
+    padding: 10vh;
+  }
+
+  .kalam h2{
+    font-family: 'Lora', serif;
+    color: rgb(19, 18, 18);
+    font-size: 25px;
+    margin-top: -0.5em;
+    letter-spacing: 0.1em;
+    margin-bottom: 3.5vh;
+}
+
+.inp {
+    height: 3.5em; /* Adjust the height as needed */
+    padding: 10px; /* Optional: To add some padding inside the input */
+    font-size: 16px; /* Adjust the font size */
+    border-radius: 5px; /* Optional: To make the corners rounded */
+    border: none; /* Optional: To customize the border */
+  }
+  .btn4{
+    height: 4.3em;
+    width:14em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8em;
+    color: rgb(247, 242, 242);
+    background-color: #0a0a0a;
+    letter-spacing: 0.1em;
+  }
+
+
+
+footer{
+    background-color: #0a0a0a;
+    min-height: 50vh;
+    width: 100%;
+    position: relative;
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;
+    
+}
+.firstone{
+    left:0vh;
+}
+.firstone img{
+    margin-bottom: 1.8em;
+}
+  .firstone svg{
+    color: #525659;
+    width: 15px;
+    height: 15px;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+.fourthone img {
+    width: 5em; /* يمكنك ضبط العرض حسب التصميم الذي تريده */
+    height: 5em; /* يمكنك ضبط الارتفاع حسب التصميم الذي تريده */
+    object-fit: cover; /* يجعل الصورة تتكيف مع الأبعاد المعطاة مع الحفاظ على النسب */
+    margin: 0.5em; /* مسافة بين الصور لتحسين المظهر */
+}
+
+.allcontent{
+    padding:5em;
+}
+.allcontent ul{
+    color: #525659;
+    list-style: none;
+    line-height: 1.7em;
+}
+ .allcontent p{
+    color: #525659;
+    line-height: 1.7em;
+}
+.allcontent h5{
+    font-family: 'Lora', serif;
+    color:white;
+    letter-spacing: 0.1em;   
+}
+
+
+/* login page */
+.loginbody{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; 
+    background-color: #d19d9d;
+}
+
+fieldset {
+    align-content: center;
+    text-align: center;
+    min-height: 100vh;
+    min-height: 50vh;
+    padding: 20px;
+    width: 550px;
+    align-items: center;
+    background-color:  #F8F9FA;
+    justify-content: center;
+    border: 5px solid #e7cdcd;
+    border-radius: 0 50px 0 0;
+}
+
+
+/* Dark Mode start */
+
+/* Dark mode styles for body */
+body.dark-mode {
+    background-color: #464444;
+    color: #ffffff;
+}
+
+/* Dark mode styles for nav links */
+body.dark-mode .nav-link {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-link:hover {
+    color: #dddddd;
+}
+
+/* Dark mode styles for buttons */
+body.dark-mode .btn-primary {
+    background-color:#703e3e;
+    color: #ffffff;
+}
+
+body.dark-mode .threeinrow h3 {
+    color: white;
+}
+
+body.dark-mode .threeinrow p{
+  color: rgba(248, 221, 228, 0.822);  
+}
+body.dark-mode .threeinrow img{
+    filter: brightness(0) invert(1);
+}
+body.dark-mode .btn1{
+    color: white;
+    background-color: #464444;
+}
+
+/* Dark Mode end */
+
+/* تصميم الشريط الجانبي */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    transition: margin-left .5s;
+  }
+  
+  /* الروابط داخل الشريط الجانبي */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* تغير لون الروابط عند التحريك */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+ .iccoonn{
+    color: white;
+    margin-left: 0.3em;
+ }
+  
+  /* زر الإغلاق */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  
+  
