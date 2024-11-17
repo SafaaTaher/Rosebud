@@ -36,7 +36,6 @@
 .navbar .navbar-nav a {
     color: white;
 }
-
 .cart_icon, .list_icon{
     color:white;
     width: 30px;
@@ -56,15 +55,21 @@
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Changes the icon to white */
 }
+/* .fbtn{
+    height: 150px !important;
+} */
 .main-btn{
-    background-color:#d35555;
+    background-color:transparent;
     color: #FFF0E9;
-    border-radius: 50px;
-    border: 1px solid #d35555;
-    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #fdfdfd;
     justify-content: center;
     text-align: center;
     font-family: 'Lora', serif;
+    text-decoration: none;
+    padding: 0.3em 0.3em;
+    font-size: 1.1em;
+   
 }
 .main-btn:hover{
     background-color:#d19d9d;
@@ -118,6 +123,38 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.4em;
 }
+
+
+@media (max-width: 575.98px){
+ 
+    .navbar-brand img{
+        margin-left: -1em;
+        width: 7em; /* قم بتعديل القيمة حسب الحجم المطلوب */
+        height: auto;
+   
+    }
+    .up_content{
+        margin-bottom: 20vh;
+    }
+    .landing{
+        margin-top: 0em;
+    }
+    .container  p:first-child{
+        font-family: 'Great Vibes', cursive;
+        color :rgb(223, 218, 218);
+        font-size: 1.5em;
+    }
+   
+    .container h1{
+        font-size: 2em;
+    }
+
+    
+    .landing .btn1 , .btn2{
+        font-size: 0.8em;
+    }
+}
+
 .threeinrow{
     margin-top: 5%;
     overflow-x: hidden;
@@ -143,15 +180,27 @@
     bottom: 0;
     margin-bottom: 0px;
 } 
-@media (max-width: 575.98px){
-    .up_content{
-        margin-bottom: 20vh;
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .landing{
+        margin-top: 1em;
+    }
+    .landing .p{
+        font-size: 2em;
+    }
+    .landing h1{
+        font-size: 3em;
+    }
+    .landing .btn1 , .btn2{
+        font-size: 2em;
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px){
     .up_content{
         margin-bottom: 20vh;
     } 
+
+    
 }
 .up_content p:first-child{
     font-family: 'Great Vibes', cursive;
@@ -233,10 +282,14 @@
     padding:15vh 5vh;
     background-color: #FFF0E9;
     margin-bottom: 15vh;
+    overflow: hidden;
 }
 .leftright .Rimg{
-    max-width: 300vh;
-    height: 57vh;
+    max-width: 100%; /* لتناسب عرض القسم */
+    max-height: 100%; /* لتناسب طول القسم */
+    width: auto;
+    height: auto;
+    object-fit: cover;
 }
 .left p:first-child{
     font-family: 'Great Vibes', cursive;
@@ -413,6 +466,7 @@
   .kalam{
     background-color: #FFF0E9;
     padding: 10vh;
+    overflow: hidden;
   }
 
   .kalam h2{
@@ -430,6 +484,8 @@
     font-size: 16px; /* Adjust the font size */
     border-radius: 5px; /* Optional: To make the corners rounded */
     border: none; /* Optional: To customize the border */
+    max-width: 100%; /* لتناسب عرض القسم */
+    max-height: 100%;
   }
   .btn4{
     height: 4.3em;
@@ -526,7 +582,7 @@ body.dark-mode {
 }
 
 /* Dark mode styles for nav links */
-body.dark-mode .nav-link {
+body.dark-mode .nav-link  {
     color: #ffffff;
 }
 
